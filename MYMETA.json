@@ -1,0 +1,61 @@
+{
+   "abstract" : "Catalyst based application",
+   "author" : [
+      "haw,,,"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Install version 1.16, CPAN::Meta::Converter version 2.150001",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Blog",
+   "no_index" : {
+      "directory" : [
+         "inc",
+         "t"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.36",
+            "Test::More" : "0.88"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Authentication" : "0",
+            "Catalyst::Action::RenderView" : "0",
+            "Catalyst::DBD::DBIC" : "0",
+            "Catalyst::Model::DBIC" : "0",
+            "Catalyst::Plugin::ConfigLoader" : "0",
+            "Catalyst::Plugin::Static::Simple" : "0",
+            "Catalyst::Runtime" : "5.90090",
+            "Catalyst::View::TT" : "0",
+            "Config::General" : "0",
+            "Moose" : "0",
+            "Session" : "0",
+            "Session::State::Cookie" : "0",
+            "Session::Store::File" : "0",
+            "catalyst::Plugin::StackTrace" : "0",
+            "namespace::autoclean" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "0.01"
+}

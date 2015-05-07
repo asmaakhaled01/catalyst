@@ -1,0 +1,36 @@
+[% # This is a TT comment. -%]
+[%- # Provide a title -%]
+[% META title = 'User Show' -%]
+[% # Note That the '-' at the beginning or end of TT code -%]
+[% # "chomps" the whitespace/newline at that end of the -%]
+[% # output (use View Source in browser to see the effect) -%]
+[% # Some basic HTML with a loop to display users -%]
+
+	Post ID:[% post.id %]<br/> 
+	Title:[% post.title %]<br/> 
+	Body:[% post.body %]<br/> 
+	user_id:[% post.user_id %]<br/> 
+
+	<br/>
+	<br/>
+	Comments:<br/><br/>
+	[% FOREACH comment IN comments -%]
+		Body:[% comment.body-%]	<br/>
+		user:[% comment.user_id-%]	<br/>
+		<br/>
+	[% END -%]
+
+<form method="post" action="[% c.uri_for('save') %]">
+<table>
+	<tr>
+		<td>Title:</td>
+		<td><input type="text" name="title"></td>
+	</tr>
+	<tr>
+		<td>Body:</td>
+		<td><input type="text" name="body"></td>
+	</tr>
+</table>
+<input type="submit" name="Submit"
+value="Submit">
+</form>

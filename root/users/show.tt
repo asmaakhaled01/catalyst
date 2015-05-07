@@ -1,0 +1,5 @@
+[% META title = 'User Show' -%]
+
+	User ID:[% user.id %]<br/> 
+	Email:[% user.email %]<br/> 
+

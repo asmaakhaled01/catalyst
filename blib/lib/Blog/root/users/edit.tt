@@ -1,0 +1,27 @@
+[% META title = 'Add User' -%]
+<form method="post" action="[% c.uri_for('id',user.id)%]/update">
+<table>
+	<tr>
+		<td>Username:</td>
+		<td><input type="text" name="username" value="[% user.username -%]"></td>
+	</tr>
+	<tr>
+		<td>Email:</td>
+		<td><input type="text" name="email" value="[% user.email -%]"></td>
+	</tr>
+	<tr>
+		<td>Password:</td>
+		<td><input type="password" name="password"></td>
+	</tr>
+	<tr>
+		<td>First Name:</td>
+		<td><input type=text" name="first_name" value="[% user.first_name -%]"></td>
+	</tr>
+	<tr>
+		<td>Last Name:</td>
+		<td><input type="text" name="last_name" value="[% user.last_name -%]"></td>
+	</tr>
+</table>
+<input type="submit" name="Submit"
+value="Submit">
+</form>

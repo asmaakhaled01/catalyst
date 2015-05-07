@@ -1,0 +1,22 @@
+<a href="/users/logout">Logout</a>
+
+[% META title = 'Users List' -%]
+
+<table border="1">
+<tr><th>Id</th><th>Name</th><th>Email</th><th>first_name</th><th>last_name</th><th>Delete</th><th>Update</th></tr>
+[% # Display each user in a table row %]
+[% FOREACH user IN users -%]
+	<tr>
+	<td>[% user.id %]</td>
+	<td>[% user.email %]</td>
+	<td> <a href="/users/id/[% user.id %]/delete">Delete</a> </td>
+	<td> <a href="/users/id/[% user.id %]/edit">Update</a> </td>
+
+	</tr>
+[% END -%]
+</table>
+
+<a href="/users/new">New User</a>
+<a href="/posts/list">See Posts</a>
+
+

@@ -1,0 +1,11 @@
+[% META title = 'Add User' -%]
+<form method="post" action="/posts/id/[% post.id %]/updatecomment/[% comment.id -%]">
+<table>
+	<tr>
+		<td>Body:</td>
+		<td><input type="text" name="body" value="[% comment.body -%]"></td>
+	</tr>
+</table>
+<input type="submit" name="Submit"
+value="Submit">
+</form>
